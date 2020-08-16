@@ -211,6 +211,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:flutter_ui_9_hello_carlos_educational_app/courses.dart';
 
 List<StaggeredTile> _staggeredTiles = const <StaggeredTile>[
   // const StaggeredTile.count(0),
@@ -409,39 +410,42 @@ class _Example01Tile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(4.0),
-      child: new Container(
-          decoration: BoxDecoration(boxShadow: [
-            BoxShadow(
-                color: Colors.grey[300].withOpacity(.6),
-                blurRadius: 2,
-                spreadRadius: 4)
-          ], borderRadius: BorderRadius.circular(18), color: Colors.white),
-          // color: backgroundColor,
-          child: new Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                  height: containerHeight == 50 ? 85 : 65,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(18),
-                          topRight: Radius.circular(18)),
-                      color: backgroundColor)),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(10, 15, 8.0, 4),
-                child: Text(courseTitle,
-                    style:
-                        TextStyle(fontSize: 17, fontWeight: FontWeight.w500)),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(10, 0, 8.0, 0),
-                child: Text("12 Courses"),
-              )
-            ],
-          )
-          ),
+    return GestureDetector(onTap: (){Navigator.push(context, MaterialPageRoute(builder: (_)=>CoursesScreen()));
+},
+          child: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: new Container(
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
+                  color: Colors.grey[300].withOpacity(.6),
+                  blurRadius: 2,
+                  spreadRadius: 4)
+            ], borderRadius: BorderRadius.circular(18), color: Colors.white),
+            // color: backgroundColor,
+            child: new Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                    height: containerHeight == 50 ? 85 : 65,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(18),
+                            topRight: Radius.circular(18)),
+                        color: backgroundColor)),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(10, 15, 8.0, 4),
+                  child: Text(courseTitle,
+                      style:
+                          TextStyle(fontSize: 17, fontWeight: FontWeight.w500)),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(10, 0, 8.0, 0),
+                  child: Text("12 Courses"),
+                )
+              ],
+            )
+            ),
+      ),
     );
   }
 }

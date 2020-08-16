@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:flutter_ui_9_hello_carlos_educational_app/video_call.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 class CoursesScreen extends StatefulWidget {
@@ -137,7 +138,13 @@ class _CoursesScreenState extends State<CoursesScreen> {
                   child: Container(
                     height: 65,
                     width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(boxShadow: [BoxShadow(color:Colors.white.withOpacity(0.8),blurRadius: 2,spreadRadius: 4)],
+                    decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.white.withOpacity(0.8),
+                              blurRadius: 2,
+                              spreadRadius: 4)
+                        ],
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(50)),
                     child: Padding(
@@ -154,14 +161,24 @@ class _CoursesScreenState extends State<CoursesScreen> {
                                 shape: BoxShape.circle, color: Colors.amber),
                           ),
                           SizedBox(width: 10),
-                          Container(
-                              width: MediaQuery.of(context).size.width / 1.4,
-                              child: Center(
-                                  child: Text("Get the Course",
-                                      style: TextStyle(color: Colors.white,height:1.2,fontSize: 16,fontWeight: FontWeight.w500,letterSpacing: -0.9))),
-                              decoration: BoxDecoration(
-                                  color: Colors.purple,
-                                  borderRadius: BorderRadius.circular(50)))
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (_)=>VideoCallScreen()));
+                            },
+                            child: Container(
+                                width: MediaQuery.of(context).size.width / 1.4,
+                                child: Center(
+                                    child: Text("Get the Course",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            height: 1.2,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            letterSpacing: -0.9))),
+                                decoration: BoxDecoration(
+                                    color: Colors.purple,
+                                    borderRadius: BorderRadius.circular(50))),
+                          )
                         ],
                       ),
                     ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_9_hello_carlos_educational_app/courses.dart';
 import 'package:flutter_ui_9_hello_carlos_educational_app/home.dart';
+import 'package:flutter_ui_9_hello_carlos_educational_app/video_call.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CoursesScreen(),
+      home: HomeScreen(),
     );
   }
 }
