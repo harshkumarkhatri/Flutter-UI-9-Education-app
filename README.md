@@ -1,6 +1,17 @@
 # flutter_ui_9_hello_carlos_educational_app
 
 This is another UI which i created in flutter. This Ui is for an educational app on which students can learn through various courses.<br>
+This UI is a part of a series of UI's i am building. Check other UI's clicking the link below.
+* [Flutter UI 1 Login UI](https://github.com/harshkumarkhatri/Flutter-UI-1-Login-UI)
+* [Flutter UI 2 Product Showcase UI](https://github.com/harshkumarkhatri/Product-Showcase-UI-Flutter)
+* [Flutter UI 3 Find Your Inspiration](https://github.com/harshkumarkhatri/Flutter-UI-3-Find-your-inspiration)
+* [Flutter UI 4 Looking for Places](https://github.com/harshkumarkhatri/Flutter-UI-4-Looking-for-Places)
+* [Flutter UI 5 Food Delivery UI](https://github.com/harshkumarkhatri/Flutter-UI-5-Food-delivery-app)
+* [Flutter UI 6 Actor Profile UI](https://github.com/harshkumarkhatri/Flutter-UI-6-Actor-Profiles-App)
+* [Flutter UI 7 Buying Frames UI](https://github.com/harshkumarkhatri/Flutter-UI-7-Buying-Frames)
+* [Flutter UI 8 New Mobile App UI](https://github.com/x-boys13/Flutter-UI-8-Truth-News-Mobile-App)
+* [Flutter UI 9 Educational UI](https://github.com/harshkumarkhatri/Flutter-UI-9-Education-app)
+
 **About the UI**:-<br>
 When you will open the app, in the first screen you will be having a search option on the top with your name and profile icon on the top. You can search for the courses through that.Below this you have a custom gridview which has different courses which can be choosesn. On clicking any of the item from the grid you will be taken to the second screen which is the course detail and other courses screen. It has multiple scrollable widgets in which each of them perform their own task. On the bottom you have a button which says "Get the Course". For now that button takes you to the third screen which is the Live screen with the help of you can attend live classes on the app itself. It has icons for enabling or disableing mic and video and your screen share. It also has a chat button and file sharing button.
 ___
